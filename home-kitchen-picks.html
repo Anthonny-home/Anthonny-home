@@ -95,7 +95,6 @@
   .product-desc { font-size: 0.85rem; color: var(--mid-muted); line-height: 1.6; margin-bottom: 1.2rem; flex: 1; }
   .product-footer { display: flex; align-items: center; justify-content: space-between; border-top: 1px dashed var(--border-soft); padding-top: 1rem; margin-top: auto; }
   .price { font-size: 1.25rem; font-weight: 700; color: var(--charcoal); }
-  .price-old { font-size: 0.85rem; color: var(--mid-muted); text-decoration: line-through; margin-left: 4px; }
   
   /* EDITOR'S CHOICE FEATURED ITEM */
   .top-pick { padding: 2.5rem 0; }
@@ -279,6 +278,7 @@
     </div>
     <div class="product-grid">
 
+      <!-- Product 1 -->
       <div class="product-card" id="airfryer">
         <div class="product-img"><img src="airfryer.png" alt="Air Fryer" style="width:100%;height:100%;object-fit:cover;"><span class="badge badge-top">Best seller</span></div>
         <div class="product-info">
@@ -293,6 +293,7 @@
         </div>
       </div>
 
+      <!-- Product 2 -->
       <div class="product-card" id="skillet">
         <div class="product-img"><img src="skillet.png" alt="Cast Iron" style="width:100%;height:100%;object-fit:cover;"><span class="badge badge-new">Heritage Piece</span></div>
         <div class="product-info">
@@ -307,6 +308,7 @@
         </div>
       </div>
 
+      <!-- Product 3 -->
       <div class="product-card" id="canisters">
         <div class="product-img"><img src="canisters.jpg" alt="Ceramic Canisters" style="width:100%;height:100%;object-fit:cover;"><span class="badge badge-new">Grandma Core</span></div>
         <div class="product-info">
@@ -325,6 +327,7 @@
   </div>
 </section>
 
+<!-- RECIPES SECTION -->
 <section id="recipes" style="background: var(--warm-white); border-top: 1px dashed var(--border-soft); border-bottom: 1px dashed var(--border-soft); padding: 2rem 0 5rem; margin-top: 5rem;">
   <div class="container">
     <div class="section-header">
@@ -333,6 +336,7 @@
     </div>
     <div class="recipe-list">
 
+      <!-- RECETA 1 -->
       <div class="recipe-item">
         <button class="recipe-toggle" onclick="toggleRecipe(this)">
           <span>🍗 Crispy Herbed Wings (Air Fryer Method)</span>
@@ -364,10 +368,75 @@
         </div>
       </div>
 
+      <!-- RECETA 2 -->
+      <div class="recipe-item">
+        <button class="recipe-toggle" onclick="toggleRecipe(this)">
+          <span>🥩 Juicy Air Fryer Chicken Breasts</span>
+          <span class="recipe-icon">▼</span>
+        </button>
+        <div class="recipe-content">
+          <div class="recipe-inner-padding">
+            <p class="recipe-intro">Perfectamente tiernas y jugosas por dentro, con una costra dorada ideal para tus comidas de la semana.</p>
+            <div class="recipe-grid">
+              <div class="recipe-box">
+                <h4>🛒 Ingredients</h4>
+                <ul>
+                  <li>2 boneless chicken breasts</li>
+                  <li>1 tbsp olive oil</li>
+                  <li>Garlic powder, oregano, and salt</li>
+                </ul>
+              </div>
+              <div class="recipe-box">
+                <h4>👩‍🍳 Instructions</h4>
+                <ol>
+                  <li>Rub chicken with olive oil and spices.</li>
+                  <li>Cook at 375°F for 15-18 minutes.</li>
+                  <li>Let it rest for 5 minutes before slicing.</li>
+                </ol>
+              </div>
+            </div>
+            <a href="#airfryer" class="btn btn-primary" style="width:100%;">Get the Chefman 6QT Fryer for this Recipe →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECETA 3 -->
+      <div class="recipe-item">
+        <button class="recipe-toggle" onclick="toggleRecipe(this)">
+          <span>🍚 Perfect Fluffy White Rice (Instant Pot)</span>
+          <span class="recipe-icon">▼</span>
+        </button>
+        <div class="recipe-content">
+          <div class="recipe-inner-padding">
+            <p class="recipe-intro">Arroz suelto, tierno y perfecto en minutos, sin descuidos ni complicaciones.</p>
+            <div class="recipe-grid">
+              <div class="recipe-box">
+                <h4>🛒 Ingredients</h4>
+                <ul>
+                  <li>2 cups long-grain white rice</li>
+                  <li>2 cups water</li>
+                  <li>1 tsp salt & 1 tbsp butter</li>
+                </ul>
+              </div>
+              <div class="recipe-box">
+                <h4>👩‍🍳 Instructions</h4>
+                <ol>
+                  <li>Rinse the rice until the water runs clear.</li>
+                  <li>Add rice, water, and salt to the Instant Pot.</li>
+                  <li>Cook on High Pressure for 3 mins, then natural release for 10 mins.</li>
+                </ol>
+              </div>
+            </div>
+            <a href="#featured" class="btn btn-primary" style="width:100%;">Get the Instant Pot Duo 7-in-1 for this Recipe →</a>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
+<!-- CURATED COLLECTIONS -->
 <section class="guides" id="guides">
   <div class="container">
     <div class="section-header">
@@ -376,7 +445,6 @@
     </div>
 
     <div class="collapsible-wrapper">
-      
       <div class="collapsible-item">
         <button class="collapsible-trigger" onclick="toggleGuide(this)">
           <div class="trigger-meta">
@@ -402,11 +470,11 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
 
+<!-- NEWSLETTER -->
 <div style="background: var(--warm-white); border-top: 1px dashed var(--border-soft);">
   <div class="container">
     <section class="newsletter">
